@@ -1,0 +1,252 @@
+/*! Stylelite v:0.1.0 | MIT LICENSE | https://github.com/n2geoff/stylelite */
+:root {
+    --space: 1rem;
+    --size: 1.1rem;
+    --radius: 0rem;
+    --fg: #17202A;
+    --bg: #FDFEFE;
+    --mg: #ABB2B9;
+}
+
+[data-theme=dark] {
+    --mg: #ABB2B9;
+    --bg: #17202A;
+    --fg: #FDFEFE;
+}
+
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+
+html,body {
+    background: var(--bg);
+    color: var(--fg);
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: var(--size);
+    letter-spacing: 0.0625em;
+    line-height: calc(var(--size) * 1.5);
+    box-sizing: border-box;
+    padding: 0;
+}
+
+img,embed,iframe,object,audio,video {
+    height: auto;
+    max-width: 100%;
+    border: none;
+}
+
+main {
+    margin: 0 auto;
+    padding: var(--space);
+    height: 100vh;
+    max-width: 1140px;
+}
+
+ul,ol,li {
+    margin: 0 calc(var(--space) *.72);
+    padding: 0
+}
+
+table {
+    background: var(--bg);
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+th {
+    text-align: left;
+}
+
+th,td {
+    padding: calc(var(--space) / 2.4);
+    border-bottom: 1px solid var(--mg);
+}
+
+blockquote {
+    margin: var(--space) 0;
+    border-left: calc(var(--space) / 2) solid var(--fg);
+    color: var(--fg);
+    background: var(--mg);
+    padding: var(--space);
+}
+
+code {
+    color: var(--mg);
+    font-family: monospace;
+}
+
+blockquote code {
+    color: var(--bg);
+}
+
+hr {
+    color: var(--mg);
+    border: 1px solid;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: var(--space) 0;
+    padding-bottom: calc(var(--space) / 2);
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: calc(var(--size) * 2);
+    color: var(--fg);
+}
+
+section, article {
+    margin-top: calc(var(--space) * 1.2);
+    padding-bottom: var(--space);
+}
+
+/* Forms */
+
+button, input {
+    display: block;
+    outline: none;
+    box-sizing: border-box;
+    font-size: var(--size);
+    background: var(--bg);
+    color: var(--fg);
+    width: 100%;
+    height: calc(var(--size) * 3);
+    border: 1px solid var(--mg);
+    border-radius: var(--radius);
+    padding: clamp(.5rem, var(--space), 2rem);
+    margin-bottom: var(--space);
+    margin-right: var(--space);
+}
+
+button, input[type="reset"],input[type="submit"] {
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: var(--radius);
+    width: initial;
+    background: var(--fg);
+    color: var(--bg);
+}
+
+button {
+    background: var(--fg);
+    color: var(--bg);
+}
+
+button:hover, input[type="reset"]:hover,input[type="submit"]:hover {
+    background: var(--mg);
+    color: var(--fg);
+    cursor: pointer;
+}
+
+input:disabled {
+    background: var(--mg);
+    color: var(--bg);
+    cursor: not-allowed;
+}
+
+select:focus,textarea:focus,input:focus {
+    border: 2px solid var(--mg);
+}
+
+input[type="checkbox"],input[type="radio"] {
+    display: inline-block;
+    padding: 0;
+    margin: 0 .5rem;
+    width: calc(var(--size) * .8);
+    height: calc(var(--size) * .8);
+}
+
+select,textarea {
+    display: inline-block;
+    outline: none;
+    font-size: var(--size);
+    height: calc(var(--size) * 3);
+    width: 100%;
+    border: 1px solid var(--mg);
+    color: var(--fg);
+    background: var(--bg);
+    border-radius: var(--radius);
+    padding: 0 var(--space);
+    margin-bottom: var(--space);
+    cursor: pointer;
+}
+
+select {
+    background: var(--bg) no-repeat 100%;
+    color: var(--fg);
+    padding: 0 clamp(.5rem, var(--space), 2rem);
+    appearance: none;
+    background-size: 1ex;
+    background-origin: content-box;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='40' fill='%23555'><polygon points='0,0 60,0 30,40'/></svg>");
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+    border: 1px solid var(--mg);
+    height: calc(var(--size) * 6rem);;
+    padding: clamp(.5rem, var(--space), 2rem);
+    cursor: text;
+    color: var(--fg);
+}
+
+/* Grid System */
+
+.grid {
+    display: grid;
+    gap: var(--space);
+    grid-template-columns: repeat(auto-fit, minmax(0%, 1fr));
+}
+
+.row {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:0;
+}
+.row>div, .col, .col-1, .col-2, .col-3, .col-4,.col-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    box-sizing: border-box;
+    flex: 1;
+    max-width: 100%;
+}
+
+.col-1 {flex: 1 !important;}
+.col-2 {flex: 2 !important;}
+.col-3 {flex: 3 !important;}
+.col-4 {flex: 4 !important;}
+.col-5 {flex: 5 !important;}
+
+/* Utilities */
+
+.right {float:right}
+.left {float:left}
+.clear {content:'';display: table;clear:both}
+.full {width: 100%; height: 100%}
+.outline {background-color: transparent; color: var(--fg); border: 1px solid var(--fg)}
+.border {border: 1px solid var(--mg)}
+.underline {border-bottom: 1px solid var(--mg)}
+.center {text-align: center;}
+.content {margin: var(--space) 0}
+.subtitle {margin-top: calc(var(--size) * -1)};
+.spaceless {margin: 0; padding:0}
+
+/* experiment */
+.sm {
+    font-size: small;
+    height: calc(var(--size) * 1.5);
+    padding: 0 calc(var(--size) / .75);
+}
+.lg {
+    font-size: x-large;
+    height: calc(var(--size) * 4.5);
+    padding: 0 calc(var(--size) / 1.25);
+}

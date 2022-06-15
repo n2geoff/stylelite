@@ -1,0 +1,29 @@
+{
+  "name": "stylelite",
+  "version": "0.1.0",
+  "description": "css for minimalists",
+  "scripts": {
+    "build": "npx csso .\\src\\stylelite.css --comments first-exclamation --output .\\dist\\stylelite.min.css -s .\\dist\\stylelite.map "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n2geoff/stylelite.git"
+  },
+  "keywords": [
+    "css",
+    "stylesheet",
+    "classless",
+    "classlite"
+  ],
+  "author": "Geoff Doty",
+  "main": "dist/stylelite.min.css",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/n2geoff/stylelite/issues"
+  },
+  "homepage": "https://n2geoff.github.io/stylelite",
+  "devDependencies": {
+    "csso-cli": "^3.0.0"
+  },
+  "dependencies": {}
+}
