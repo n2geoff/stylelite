@@ -1,9 +1,9 @@
 {
   "name": "stylelite",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "description": "css for minimalists",
   "scripts": {
-    "build": "npx csso .\\src\\stylelite.css --comments first-exclamation --output .\\dist\\stylelite.min.css -s .\\dist\\stylelite.map "
+    "build": "npx csso .\\src\\stylelite.css --comments first-exclamation --output .\\dist\\stylelite.min.css -s .\\dist\\stylelite.map"
   },
   "repository": {
     "type": "git",
@@ -11,6 +11,7 @@
   },
   "keywords": [
     "css",
+    "css3",
     "stylesheet",
     "classless",
     "classlite"

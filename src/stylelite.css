@@ -1,4 +1,4 @@
-/*! Stylelite v:0.1.0 | MIT LICENSE | https://github.com/n2geoff/stylelite */
+/*! Stylelite v:0.5.0 | MIT LICENSE | https://github.com/n2geoff/stylelite */
 :root {
     --space: 1rem;
     --size: 1.1rem;
@@ -78,7 +78,7 @@ code {
     font-family: monospace;
 }
 
-blockquote code {
+blockquote code, details code {
     color: var(--bg);
 }
 
@@ -98,6 +98,9 @@ h1 {
     color: var(--fg);
 }
 
+a {color: var(--mg)}
+a:hover {color: var(--fg)}
+
 section, article {
     margin-top: calc(var(--space) * 1.2);
     padding-bottom: var(--space);
@@ -105,8 +108,25 @@ section, article {
 
 /* Forms */
 
+details {
+    margin: var(--space) 0;
+    color: var(--bg);
+    cursor: pointer;
+}
+
+details[open] {
+    background-color: var(--mg);
+    margin-bottom: var(--space);
+}
+
+details>* {padding: calc(var(--space)/2); border-top: 1px solid var(--bg)}
+
+summary {
+    background-color: var(--mg);
+}
+
 button, input {
-    display: block;
+    display: inline-block;
     outline: none;
     box-sizing: border-box;
     font-size: var(--size);
@@ -194,6 +214,28 @@ textarea {
     color: var(--fg);
 }
 
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    background-color: var(--fg);
+    color: var(--bg);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: var(--bg);
+    text-decoration: none;
+}
+nav ul li a:hover {color: var(--mg)}
+
+
 /* Grid System */
 
 .grid {
@@ -209,7 +251,7 @@ textarea {
     flex-wrap: wrap;
     margin:0;
 }
-.row>div, .col, .col-1, .col-2, .col-3, .col-4,.col-5 {
+.row>*, .col, .col-1, .col-2, .col-3, .col-4,.col-5 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -229,24 +271,14 @@ textarea {
 
 .right {float:right}
 .left {float:left}
-.clear {content:'';display: table;clear:both}
-.full {width: 100%; height: 100%}
-.outline {background-color: transparent; color: var(--fg); border: 1px solid var(--fg)}
-.border {border: 1px solid var(--mg)}
-.underline {border-bottom: 1px solid var(--mg)}
 .center {text-align: center;}
-.content {margin: var(--space) 0}
-.subtitle {margin-top: calc(var(--size) * -1)};
+.clear {content:'';display: table;clear:both}
+.fill {width: 100%; height: 100%}
+.outline {background-color: transparent; color: var(--fg); border: 1px solid var(--fg)}
+.underline {border-bottom: 1px solid var(--mg)}
+.border {border: 1px solid var(--mg)}
+.content {padding: var(--space)}
+.subtitle {margin-top: calc(var(--size) * -1); margin-bottom: var(--space); font-size: smaller};
 .spaceless {margin: 0; padding:0}
-
-/* experiment */
-.sm {
-    font-size: small;
-    height: calc(var(--size) * 1.5);
-    padding: 0 calc(var(--size) / .75);
-}
-.lg {
-    font-size: x-large;
-    height: calc(var(--size) * 4.5);
-    padding: 0 calc(var(--size) / 1.25);
-}
+.sm {font-size: small;height: calc(var(--size) * 1.5);padding: 0 calc(var(--size)/ .75);}
+.lg {font-size: x-large;height: calc(var(--size) * 4.5);padding: 0 calc(var(--size) / 1.25);}
