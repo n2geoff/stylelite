@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylelite</title>
+    <link rel="stylesheet" href="../src/stylelite.css">
+    <style>
+        .fg-danger {color: indianred}
+        .fg-success {color: seagreen}
+        .fg-primary {color: steelblue}
+        .fg-warning {color: khaki}
+        .btn-success {background: seagreen; color: #FFF;}
+        .btn-danger {background: indianred; color: #FFF;}
+        .btn-primary {background: steelblue; color: #FFF;}
+        .btn-warning {background: khaki; color: #000;}
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <nav>
+                <strong>Styles</strong>
+                <ul>
+                    <li><a href="#type">Typography</a></li>
+                    <li><a href="#forms">Forms</a></li>
+                    <li><a href="#table">Tables</a></li>
+                    <li><a href="#grid">Grid Layout</a></li>
+                    <li><a href="#utilities">Utilities</a></li>
+                    <li></li>
+                </ul>
+            </nav>
+            <br>
+            <div>
+                <h1 style="color: var(--mg);">
+                    STYLELITE
+                    <span style="color: var(--fg);">CSS</span>
+                </h1>
+                <div class="subtitle">CSS for Minimalist</div>
+            </div>
+            <br>
+            <div class="grid">
+                <div style="background: var(--fg);">&nbsp;</div>
+                <div style="background: var(--mg);">&nbsp;</div>
+                <div class="outline">&nbsp;</div>
+            </div>
+        </section>
+        <section>
+            <a name="overview"></a>
+            <h2 class="underline">Overview</h2>
+            <div>
+                <code>DIV</code> is not the only tag avalible to your designs.
+                Mimic traditional <code>.container</code> class by just using a <code>MAIN</code> tag.
+                <p></p>
+                Need to divide major sections of your code, eh...use <code>SECTION</code> tag.
+                <p></p>
+                And for that little extra content flair, wrap in an <code>ARTICLE</code> tag.
+            </div>
+        </section>
+        <section>
+            <a name="type"></a>
+            <h2>Typography</h2>
+            <div>
+                <blockquote>
+                    The alternative to good design is always bad design. there is no such thing as no design.
+                    Simplicity carried to an extreme, becomes elegance.
+                        <cite>-- Adam Judge</cite>
+                </blockquote>
+                <p>
+                    <code>P</code>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum luctus arcu,
+                    eu faucibus ex. Ut consequat lorem eget aliquet semper. Praesent quis vestibulum ante,
+                    id tristique leo. Etiam sed congue lacus. Nunc ut ornare metus. Suspendisse tincidunt in
+                    odio eu faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                    facilisi.
+                </p>
+                <p>
+                    <code>STRONG</code>
+                    <strong id="generated">Generated 1 paragraph, 52 words, 354 bytes of
+                        <a href="https://www.lipsum.com/" title="Lorem Ipsum">Lorem Ipsum</a>
+                    </strong>
+                </p>
+                <hr>
+            </div>
+            <div class="grid">
+                <div>
+                    <h1><code>H1</code> Heading...</h1>
+                    <h2><code>H2</code> Heading...</h2>
+                    <h3><code>H3</code> Heading...</h3>
+                    <h4><code>H4</code> Heading...</h4>
+                    <h5><code>H5</code> Heading...</h5>
+                    <h6><code>H6</code> Heading...</h6>
+                </div>
+                <div>
+                    <p><code>P</code> can simply be a paragraph</p>
+                    <p><code>A</code> can be a <a href="./">link</a></p>
+                    <p><code>STRONG</code> can be <strong>bold</strong></p>
+                    <p><code>U</code> can be <u>underlined</u></p>
+                    <p><code>EM</code> can be <em>emphasised</em></p>
+                    <p><code>SMALL</code> can be <small>small</small></p>
+                    <p><code>CODE</code> can be <code>code</code></p>
+                </div>
+            </div>
+            <div>
+                <code>HR</code>
+                <hr>
+            </div>
+            <div>
+                <div>
+                    <code>IMG</code>
+                </div>
+                <img src='http://via.placeholder.com/340x280' alt='Example image'>
+            </div>
+        </section>
+        <section>
+            <a name="lists"></a>
+            <h2>Lists</h2>
+            <article class="grid">
+                <div>
+                    <code>UL</code>
+                    <ul>
+                        <li><code>LI</code>List Item</li>
+                        <li><code>LI</code>List Item</li>
+                        <li><code>LI</code>List Item</li>
+                        <li><code>LI</code>List Item</li>
+                    </ul>
+                </div>
+                <div>
+                    <code>OL</code>
+                    <ol>
+                        <li><code>LI</code>List Item</li>
+                        <li><code>LI</code>List Item</li>
+                        <li><code>LI</code>List Item</li>
+                        <li><code>LI</code>List Item</li>
+                    </ol>
+                </div>
+            </article>
+        </section>
+        <section>
+            <a name="forms"></a>
+            <h2>Forms</h2>
+            <form>
+                <details>
+                    <summary>Details Summary</summary>
+                    <div>
+                        Default <code>details</code> and <code>summary</code> behavior.
+                        wrap content in tag, like <code>div</code>
+                    </div>
+                </details>
+
+                <div>
+                    <label for='id'>User id (read only)</label>
+                    <input name='id' id='id' value='R2D2' readonly>
+                </div>
+                <div>
+                    <label for='email'>Email</label>
+                    <input type='email' name='email' id='email' placeholder='email@example.com'>
+                </div>
+                <div>
+                    <label for='password'>Password</label>
+                    <input type='password' name='password' id='password'>
+                </div>
+
+                <div>
+                    <label for='disabled'>Random disabled input</label>
+                    <input disabled name='disabled' id='disabled'
+                        placeholder='Because why not?'>
+                </div>
+
+                <div>
+                    <label for='selected'>Prefered theme</label>
+                    <select name="selected" id="">
+                        <option value="">Choose One</option>
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for='about'>About me</label>
+                    <textarea name='about' id='about'
+                        placeholder='I am a textarea...'></textarea>
+                </div>
+
+                <div>
+                    <label for='remember'>
+                        <input type='checkbox' name='remember' id='remember' checked>
+                        Remember me
+                    </label>
+                </div>
+
+                <div>
+                    <input class="right" type="submit"></input>
+                </div>
+            </form>
+        </section>
+        <br>
+        <section>
+            <a name="buttons"></a>
+            <h3>Buttons</h3>
+            <div class="grid">
+                <button class="sm">Small</button>
+                <button>Default</button>
+                <button class="lg">Large</button>
+                <button class="outline">Outline</button>
+            </div>
+
+            <div class="grid">
+                <button class="btn-warning">Warning</button>
+                <button class="btn-danger">Danger</button>
+                <button class="btn-primary">Primary</button>
+                <button class="btn-success">Success</button>
+            </div>
+        </section>
+        <section>
+            <a name="table"></a>
+            <h2>Tables</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>One</th>
+                        <th>Two</th>
+                        <th>There</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <a name="grid"></a>
+            <h2>Grid System</h2>
+            <p>
+                The flex-based grid system dynamicly divides content on the number of
+                child elements under <code>row</code>, be that a plain <code>div</code>(auto) or <code>col-*</code>
+
+                <p>
+                    column sizes range from <code>col-1</code> to <code>col-5</code>
+                </p>
+
+                <p>
+                    a <code>col-5</code> is 5x <code>col-1</code>
+                </p>
+
+                <blockquote>
+                    if <code>col-*</code> is not defined on a <code>div</code>, it is considered a <code>col-1</code>
+                </blockquote>
+            </p>
+            <article>
+                <div class="row content">
+                    <div class="border center">auto</div>
+                </div>
+                <div class="row content">
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                </div>
+                <div class="row content">
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                </div>
+                <div class="row content">
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                </div>
+                <div class="row content">
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                </div>
+                <div class="row content">
+                    <div class="border center col-2">2</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                </div>
+                <div class="row content">
+                    <div class="border center col-3">3</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                </div>
+                <div class="row content">
+                    <div class="border center col-4">4</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                </div>
+                <div class="row content">
+                    <div class="border center col-5">5</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                </div>
+            </article>
+        </section>
+        <section>
+            <a name="utilities"></a>
+            <h2>Utility</h2>
+            <table>
+                <tr>
+                    <th><code>.content</code></th>
+                    <td>adds uniform padding</td>
+                </tr>
+                <tr>
+                    <th><code>.left</code></th>
+                    <td>float content left</td>
+                </tr>
+                <tr>
+                    <th><code>.right</code></th>
+                    <td>float content right</td>
+                </tr>
+                <tr>
+                    <th><code>.center</code></th>
+                    <td>text aligns content center</td>
+                </tr>
+                <tr>
+                    <th><code>.grid</code></th>
+                    <td>dynamic grid layout helper</td>
+                </tr>
+                <tr>
+                    <th><code>.sm</code></th>
+                    <td>reduces component size by half</td>
+                </tr>
+                <tr>
+                    <th><code>.lg</code></th>
+                    <td>increase component size by 75%</td>
+                </tr>
+                <tr>
+                    <th><code>.outline</code></th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th><code>.underline</code></th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th><code>.border</code></th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th><code>.spaceless</code></th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th><code>.subtitle</code></th>
+                    <td>designed for tigher fit under headings</td>
+                </tr>
+                <tr>
+                    <th><code>.fill</code></th>
+                    <td>fills all available space</td>
+                </tr>
+                <tr>
+                    <th><code>.clear</code></th>
+                    <td> clear float fix</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
