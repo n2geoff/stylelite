@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +7,7 @@
     <title>Stylelite</title>
     <link rel="stylesheet" href="../src/stylelite.css">
     <style>
-        .fg-danger {color: indianred}
-        .fg-success {color: seagreen}
-        .fg-primary {color: steelblue}
-        .fg-warning {color: khaki}
-        .btn-success {background: seagreen; color: #FFF;}
-        .btn-danger {background: indianred; color: #FFF;}
-        .btn-primary {background: steelblue; color: #FFF;}
-        .btn-warning {background: khaki; color: #000;}
+
     </style>
 </head>
 <body>
@@ -27,6 +20,7 @@
                     <li><a href="#forms">Forms</a></li>
                     <li><a href="#table">Tables</a></li>
                     <li><a href="#grid">Grid Layout</a></li>
+                    <li><a href="#components">Components</a></li>
                     <li><a href="#utilities">Utilities</a></li>
                     <li></li>
                 </ul>
@@ -42,7 +36,7 @@
             <br>
             <div class="grid">
                 <div style="background: var(--fg);">&nbsp;</div>
-                <div style="background: var(--mg);">&nbsp;</div>
+                <div style="background: var(--gray);">&nbsp;</div>
                 <div class="outline">&nbsp;</div>
             </div>
         </section>
@@ -140,7 +134,7 @@
         <section>
             <a name="forms"></a>
             <h2>Forms</h2>
-            <form>
+            <form class="">
                 <details>
                     <summary>Details Summary</summary>
                     <div>
@@ -200,17 +194,20 @@
             <a name="buttons"></a>
             <h3>Buttons</h3>
             <div class="grid">
-                <button class="sm">Small</button>
-                <button>Default</button>
-                <button class="lg">Large</button>
-                <button class="outline">Outline</button>
+                <button>Button</button>
+                <button class="default">Default</button>
+                <button class="primary">Primary</button>
+                <button disabled>Disabled</button>
+                <button class="link">Link</button>
             </div>
 
             <div class="grid">
-                <button class="btn-warning">Warning</button>
-                <button class="btn-danger">Danger</button>
-                <button class="btn-primary">Primary</button>
-                <button class="btn-success">Success</button>
+                <button class="default">Default</button>
+                <button class="primary">Primary</button>
+                <button class="info">Info</button>
+                <button class="warning">Warning</button>
+                <button class="danger">Danger</button>
+                <button class="success">Success</button>
             </div>
         </section>
         <section>
@@ -263,60 +260,70 @@
                     if <code>col-*</code> is not defined on a <code>div</code>, it is considered a <code>col-1</code>
                 </blockquote>
             </p>
-            <article>
-                <div class="row content">
+            <section>
+                <div class="row">
                     <div class="border center">auto</div>
                 </div>
-                <div class="row content">
-                    <div class="border center">auto</div>
-                    <div class="border center">auto</div>
-                </div>
-                <div class="row content">
-                    <div class="border center">auto</div>
+                <div class="row">
                     <div class="border center">auto</div>
                     <div class="border center">auto</div>
                 </div>
-                <div class="row content">
-                    <div class="border center">auto</div>
+                <div class="row">
                     <div class="border center">auto</div>
                     <div class="border center">auto</div>
                     <div class="border center">auto</div>
                 </div>
-                <div class="row content">
-                    <div class="border center">auto</div>
+                <div class="row">
                     <div class="border center">auto</div>
                     <div class="border center">auto</div>
                     <div class="border center">auto</div>
                     <div class="border center">auto</div>
                 </div>
-                <div class="row content">
+                <div class="row">
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                </div>
+                <div class="row">
                     <div class="border center col-2">2</div>
                     <div class="border center">auto</div>
                     <div class="border center">auto</div>
                     <div class="border center">auto</div>
                     <div class="border center">auto</div>
                 </div>
-                <div class="row content">
+                <div class="row">
                     <div class="border center col-3">3</div>
                     <div class="border center">auto</div>
                     <div class="border center">auto</div>
                     <div class="border center">auto</div>
                     <div class="border center">auto</div>
                 </div>
-                <div class="row content">
+                <div class="row">
                     <div class="border center col-4">4</div>
                     <div class="border center">auto</div>
                     <div class="border center">auto</div>
                     <div class="border center">auto</div>
                     <div class="border center">auto</div>
                 </div>
-                <div class="row content">
+                <div class="row">
                     <div class="border center col-5">5</div>
                     <div class="border center">auto</div>
                     <div class="border center">auto</div>
                     <div class="border center">auto</div>
                     <div class="border center">auto</div>
                 </div>
+            </section>
+        </section>
+        <section>
+            <a name="components"></a>
+            <h2>Components</h2>
+
+            <article>
+                <header>Header</header>
+                <main>Content</main>
+                <footer>Footer</footer>
             </article>
         </section>
         <section>
