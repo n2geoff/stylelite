@@ -33,7 +33,7 @@ All in **2kb gzipped!**
 
 ## TODO
 
-Keep it small, but immediately useful. 
+Keep it small, but immediately useful.
 
 Tweaks to hit that SWEET spot:
 
