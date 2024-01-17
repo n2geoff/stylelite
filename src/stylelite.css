@@ -388,9 +388,15 @@ nav ul li a:hover {opacity: .75;}
 .outline {background-color: transparent; color: var(--fg); border: 1px solid var(--fg)}
 .underline {border-bottom: 1px solid var(--mg)}
 .border {border: 1px solid var(--theme)}
+.padding {padding: var(--space)}
+.margin {margin: var(--space)}
 .title {margin: 0; padding:0}
 .subtitle {margin-top: -.25rem; font-size: small};
 .spaceless {margin: 0; padding:0}
 .sm {font-size: small;height: calc(var(--size) * 1.5);padding: 0 calc(var(--size)/ .75);}
 .lg {font-size: x-large;height: calc(var(--size) * 4.5);padding: 0 calc(var(--size) / 1.25);}
 .rounded {border-radius: calc(var(--size) / 4);}
+.no-border {border: none}
+.no-padding {padding: 0}
+.no-margin {padding: 0}
+.no-theme {--theme: var(--fg)}
