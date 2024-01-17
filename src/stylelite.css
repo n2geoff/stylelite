@@ -1,7 +1,7 @@
 /*! Stylelite v:0.5.0 | MIT LICENSE | https://github.com/n2geoff/stylelite */
 :root {
     --space: 1rem;
-    --size: 1.1rem;
+    --size: 1rem;
     --radius: 0rem;
     --fg: #17202A;
     --bg: #FDFEFE;
@@ -37,7 +37,7 @@ html,body {
     font-family: -apple-system, system-ui, Roboto, sans-serif;
     font-size: 16px;
     letter-spacing: 0.0125em;
-    line-height: calc(var(--size) * 1.5);
+    line-height: 1.5rem;
     box-sizing: border-box;
     padding: 0;
 }
@@ -75,8 +75,8 @@ th {
 }
 
 th,td {
-    padding: calc(var(--space) / 2.4);
     border-bottom: 1px solid var(--mg);
+    padding: .5rem;
 }
 
 fieldset {border: none;padding: 0;}
@@ -189,12 +189,15 @@ button, input {
     font-size: 1rem;
     background: var(--bg);
     color: var(--fg);
+    min-width: fit-content;
     width: 100%;
-    height: calc(var(--size) * 2);
     border: 1px solid var(--mg);
+    height: 2.5rem;
     border-radius: var(--radius);
     padding: .5rem 1rem;
 }
+
+input[type=color] {padding: .25rem}
 
 button, input[type="reset"],input[type="submit"] {
     display: inline-block;
@@ -277,7 +280,7 @@ select,textarea {
     display: inline-block;
     outline: none;
     font-size: var(--size);
-    height: calc(var(--size) * 2);
+    height: 2.5rem;
     width: 100%;
     border: 1px solid var(--mg);
     color: var(--fg);
