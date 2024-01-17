@@ -83,6 +83,8 @@ th,td {
     border-bottom: 1px solid var(--theme);
 }
 
+table.condensed * {padding:0}
+
 fieldset {border: none;padding: 0;}
 
 legend {
