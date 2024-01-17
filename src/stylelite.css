@@ -52,6 +52,8 @@ img,embed,iframe,object,audio,video {
     border: none;
 }
 
+label {font-weight: 600;}
+
 main {
     margin: 0 auto;
     padding: var(--space);
