@@ -52,7 +52,7 @@ img,embed,iframe,object,audio,video {
     border: none;
 }
 
-label {font-weight: 600;}
+label {font-weight: 600;color: var(--dark)}
 
 main {
     margin: 0 auto;
