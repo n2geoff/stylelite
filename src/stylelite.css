@@ -149,7 +149,7 @@ h5 {font-size: 1rem}
 h6 {font-size: .9rem}
 
 a {color: var(--theme)}
-a:hover {opacity: .5;}
+a:hover {color: var(--dark);}
 
 section, article {
     margin-bottom: calc(var(--space) * 1.2);
@@ -193,7 +193,7 @@ summary {
     background-color: var(--default);
 }
 
-button, input {
+a.button, button, input {
     display: inline-block;
     outline: none;
     box-sizing: border-box;
@@ -228,7 +228,7 @@ button.link {
     color: var(--theme)
 }
 
-button {
+a.button, button {
     background: var(--theme);
     color: var(--white);
 }
@@ -258,7 +258,7 @@ button.success {
     color: var(--white);
 }
 
-button:hover, input[type="reset"]:hover,input[type="submit"]:hover {
+a.button:hover, button:hover, input[type="reset"]:hover,input[type="submit"]:hover {
     background: var(--dark);
     border: 2px solid var(--theme);
     color: var(--light);
