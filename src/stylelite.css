@@ -104,16 +104,16 @@ legend {
 
 blockquote {
     margin: var(--space) 0;
-    border-left: calc(var(--space) / 2) solid var(--theme);
     color: var(--black);
     background: var(--default);
     padding: var(--space);
 }
 
-blockquote.primary {background: #DEF}
-blockquote.danger {background: #FEE}
-blockquote.warn {background: #FEA}
-blockquote.success {background: #DFE}
+blockquote.primary {background: #EBF5FB; color: var(--primary); border: 1px solid var(--primary)}
+blockquote.danger {background: #FDEDEC; color: var(--danger); border: 1px solid var(--danger)}
+blockquote.warn {background: #FEF9E7; color: var(--warning) ; border: 1px solid var(--warning)}
+blockquote.success {background: #EAFAF1; color: var(--success); border: 1px solid var(--success)}
+blockquote.default {background: #EEE; color: var(--dark); border: 1px solid var(--dark)}
 
 code {
     background: var(--default);
