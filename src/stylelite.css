@@ -275,7 +275,7 @@ a.button:hover, button:hover, input[type="reset"]:hover,input[type="submit"]:hov
     cursor: pointer;
 }
 
-input:disabled {
+select:disabled, textarea:disabled,input:disabled {
     color: #404040;
     background: #EBEDEF;
     cursor: not-allowed;
