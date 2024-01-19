@@ -13,8 +13,18 @@
 <body>
     <main>
         <section>
+            <!-- <div class="grid">
+                <div style="background: var(--fg);">&nbsp;</div>
+                <div style="background: var(--gray);">&nbsp;</div>
+                <div class="outline">&nbsp;</div>
+            </div> -->
+            <!-- <br> -->
             <nav>
-                <strong>Styles</strong>
+                <!-- <h1 class="no-margin">Styles</h1> -->
+                <h1 class="no-margin" style="color: var(--mg);">
+                    STYLELITE
+                    <span style="color: var(--fg);">CSS</span>
+                </h1>
                 <ul>
                     <li><a href="#type">Typography</a></li>
                     <li><a href="#forms">Forms</a></li>
@@ -25,20 +35,20 @@
                     <li></li>
                 </ul>
             </nav>
-            <br>
-            <div>
+            <!-- <br> -->
+            <!-- <div>
                 <h1 style="color: var(--mg);">
                     STYLELITE
                     <span style="color: var(--fg);">CSS</span>
                 </h1>
-                <div class="subtitle">CSS for Minimalist</div>
-            </div>
-            <br>
-            <div class="grid">
+                <div class="">CSS for Minimalist</div>
+            </div> -->
+            <!-- <br> -->
+            <!-- <div class="grid">
                 <div style="background: var(--fg);">&nbsp;</div>
                 <div style="background: var(--gray);">&nbsp;</div>
                 <div class="outline">&nbsp;</div>
-            </div>
+            </div> -->
         </section>
         <section>
             <a name="overview"></a>
@@ -163,7 +173,7 @@
                 </div>
 
                 <div>
-                    <label for='selected'>Prefered theme</label>
+                    <label for='selected'>Preferred theme</label>
                     <select name="selected" id="">
                         <option value="">Choose One</option>
                         <option value="light">Light</option>
@@ -178,13 +188,10 @@
                 </div>
 
                 <div>
+                    <input type='checkbox' name='remember' id='remember' checked>
                     <label for='remember'>
-                        <input type='checkbox' name='remember' id='remember' checked>
-                        Remember me
+                        Remember Me
                     </label>
-                </div>
-
-                <div>
                     <input class="right" type="submit"></input>
                 </div>
             </form>
@@ -194,17 +201,14 @@
             <a name="buttons"></a>
             <h3>Buttons</h3>
             <div class="grid">
-                <button>Button</button>
-                <button class="default">Default</button>
-                <button class="primary">Primary</button>
+                <button>Theme</button>
                 <button disabled>Disabled</button>
+                <button class="default">Default</button>
                 <button class="link">Link</button>
             </div>
 
             <div class="grid">
-                <button class="default">Default</button>
                 <button class="primary">Primary</button>
-                <button class="info">Info</button>
                 <button class="warning">Warning</button>
                 <button class="danger">Danger</button>
                 <button class="success">Success</button>
@@ -244,22 +248,17 @@
         <section>
             <a name="grid"></a>
             <h2>Grid System</h2>
-            <p>
+            <div>
                 The flex-based grid system dynamicly divides content on the number of
-                child elements under <code>row</code>, be that a plain <code>div</code>(auto) or <code>col-*</code>
+                child elements under <code>row</code>, be that a plain <code>div</code>(auto) or <code>col-*</code>.
 
-                <p>
-                    column sizes range from <code>col-1</code> to <code>col-5</code>
-                </p>
-
-                <p>
-                    a <code>col-5</code> is 5x <code>col-1</code>
-                </p>
+                Column sizes range from <code>col-1</code> to <code>col-5</code>
+                a <code>col-5</code> is 5x <code>col-1</code>
 
                 <blockquote>
                     if <code>col-*</code> is not defined on a <code>div</code>, it is considered a <code>col-1</code>
                 </blockquote>
-            </p>
+            </div>
             <section>
                 <div class="row">
                     <div class="border center">auto</div>
@@ -320,11 +319,21 @@
             <a name="components"></a>
             <h2>Components</h2>
 
-            <article>
-                <header>Header</header>
-                <main>Content</main>
-                <footer>Footer</footer>
-            </article>
+            <div class="grid center">
+                <div>
+                    <article>
+                        <header>Header</header>
+                        <main>Content</main>
+                        <footer>Footer</footer>
+                    </article>
+                </div>
+                <div>
+                    <button>Modal</button>
+                </div>
+                <div>
+                    Something
+                </div>
+            </div>
         </section>
         <section>
             <a name="utilities"></a>

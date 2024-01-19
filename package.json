@@ -1,9 +1,9 @@
 {
   "name": "stylelite",
-  "version": "0.5.0",
-  "description": "css for minimalists",
+  "version": "0.6.0",
+  "description": "a class-lite stylesheet on the light-side",
   "scripts": {
-    "build": "npx csso .\\src\\stylelite.css --comments first-exclamation --output .\\dist\\stylelite.min.css -s .\\dist\\stylelite.map"
+    "build": "npx csso-cli .\\src\\stylelite.css --comments first-exclamation --output .\\dist\\stylelite.min.css -s .\\dist\\stylelite.map"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,7 @@
   },
   "homepage": "https://n2geoff.github.io/stylelite",
   "devDependencies": {
-    "csso-cli": "^3.0.0"
+    "csso-cli": "^4.0.2"
   },
   "dependencies": {}
 }

@@ -1,4 +1,4 @@
-/*! Stylelite v:0.5.0 | MIT LICENSE | https://github.com/n2geoff/stylelite */
+/*! Stylelite v:0.6.0 | MIT LICENSE | https://github.com/n2geoff/stylelite */
 :root {
     --space: 1rem;
     --size: 1rem;
@@ -36,9 +36,10 @@
 html,body {
     background: var(--bg);
     color: var(--fg);
+    accent-color: var(--theme);
     margin: 0;
     padding: 0;
-    font-family: -apple-system, system-ui, Roboto, sans-serif;
+    font-family: system-ui, sans-serif;
     font-size: 16px;
     letter-spacing: 0.0125em;
     line-height: 1.5rem;
@@ -46,18 +47,27 @@ html,body {
     padding: 0;
 }
 
+div, input, button, textarea, select {margin-bottom: .25rem;}
+
+p {margin: .5rem 0}
+
 img,embed,iframe,object,audio,video {
     height: auto;
     max-width: 100%;
     border: none;
 }
 
-label {font-weight: 600;color: var(--dark)}
+label {
+    display: inline;
+    font-weight: 600;
+    color: var(--dark);
+    padding: .5rem 0;
+    vertical-align: top;
+}
 
 main {
     margin: 0 auto;
     padding: var(--space);
-    height: 100vh;
     max-width: 1140px;
 }
 
@@ -138,34 +148,21 @@ h1 {
 }
 
 h2 {font-size: 1.8rem}
-h3 {font-size: 1.4rem}
-h4 {font-size: 1.2rem}
-h5 {font-size: 1rem}
-h6 {font-size: .9rem}
+h3 {font-size: 1.4rem;margin: .5rem 0}
+h4 {font-size: 1.2rem; margin: .25rem 0}
+h5 {font-size: 1rem; margin: .25rem 0}
+h6 {font-size: .9rem; margin: .25rem 0}
 
 a {color: var(--theme)}
 a:hover {color: var(--dark);}
 
 section, article {
-    margin-bottom: calc(var(--space) * 1.2);
-    padding-bottom: var(--space);
+    margin-bottom: 2rem;
 }
 
 article {
     border: 1px solid rgba(0,0,0,.125);
     background: var(--default);
-}
-
-article main {
-    height: auto;
-    padding: var(--space);
-}
-
-article header {
-    padding: var(--space);
-}
-
-article footer {
     padding: var(--space);
 }
 
@@ -210,6 +207,14 @@ a.button, button, input {
 }
 
 input[type=color] {padding: .25rem}
+
+input[type="checkbox"],
+input[type="radio"]{
+    padding: 0;
+	width: 1.1rem;
+	height: 1.1rem;
+	margin-right: .5rem;
+}
 
 button, input[type="reset"],input[type="submit"] {
     display: inline-block;
@@ -278,14 +283,6 @@ select:focus,textarea:focus,input:focus {
 
 option { line-height: 1rem; vertical-align: center;}
 
-input[type="checkbox"],input[type="radio"] {
-    display: inline-block;
-    padding: 0;
-    margin: 0 .5rem;
-    width: calc(var(--size) * .8);
-    height: calc(var(--size) * .8);
-}
-
 select,textarea {
     display: inline-block;
     outline: none;
@@ -332,7 +329,6 @@ nav > ul {
     margin: 0 0 0 -2rem;
     display: flex;
     list-style-type: none;
-
 }
 
 nav ul li a {
@@ -347,9 +343,9 @@ nav ul li a:hover {opacity: .75;}
 
 .grid {
     display: grid;
-    gap: var(--space);
+    gap: .25rem;
     grid-template-columns: repeat(auto-fit, minmax(0%, 1fr));
-    padding: .4rem;
+    /* padding: 0; */
 }
 
 .row {
@@ -357,6 +353,7 @@ nav ul li a:hover {opacity: .75;}
     flex: 0 1 auto;
     flex-direction: row;
     flex-wrap: wrap;
+    column-gap: .5rem;
     margin:0;
     padding: .25rem 0;
 }
@@ -366,9 +363,8 @@ nav ul li a:hover {opacity: .75;}
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
-    box-sizing: border-box;
     flex: 1;
-    padding: calc(var(--size) / 2);
+    padding: .5rem;
     max-width: 100%;
 }
 
@@ -393,9 +389,9 @@ nav ul li a:hover {opacity: .75;}
 .padding {padding: var(--space)}
 .margin {margin: var(--space)}
 .title {margin: 0; padding:0}
-.subtitle {margin-top: -.25rem; font-size: small};
+.subtitle {margin-top: -.25rem; font-size: smaller};
 .spaceless {margin: 0; padding:0}
-.sm {font-size: small;height: calc(var(--size) * 1.5);padding: 0 calc(var(--size)/ .75);}
+.sm {font-size: smaller;height: calc(var(--size) * 1.5);padding: 0 calc(var(--size)/ .75);}
 .lg {font-size: x-large;height: calc(var(--size) * 4.5);padding: 0 calc(var(--size) / 1.25);}
 .rounded {border-radius: calc(var(--size) / 4);}
 .no-border {border: none}
