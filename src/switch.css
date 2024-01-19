@@ -11,7 +11,7 @@ input[type="checkbox"][role="switch"] {
     /* border-radius: 1em; */
     vertical-align: text-bottom;
     margin: auto;
-    color: inherit;
+    color: var(--theme, inherit);
 }
 
 input[type="checkbox"][role="switch"]::before {
@@ -31,6 +31,6 @@ input[type="checkbox"][role="switch"]::before {
 
 input[type="checkbox"][role="switch"]:checked::before {
     left: 1em;
-    background: var(--primary, #000);
-    border: 1px solid var(--primary, #000);
+    background: var(--theme, #000);
+    border: 1px solid var(--theme, #000);
 }

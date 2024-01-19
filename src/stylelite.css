@@ -119,15 +119,6 @@ blockquote.warn {background: #FEF9E7; color: var(--warning) ; border: 1px solid 
 blockquote.success {background: #EAFAF1; color: var(--success); border: 1px solid var(--success)}
 blockquote.default {background: #EEE; color: var(--dark); border: 1px solid var(--dark)}
 
-code {
-    background: var(--default);
-    font-family: monospace;
-}
-
-blockquote code, details code {
-    color: var(--bg);
-}
-
 hr {
     color: var(--theme);
     border: 1px solid;
@@ -337,8 +328,8 @@ nav {
     border-bottom: 1px solid var(--theme);
 }
 
-nav ul {
-    margin:0;
+nav > ul {
+    margin: 0 0 0 -2rem;
     display: flex;
     list-style-type: none;
 
@@ -351,7 +342,6 @@ nav ul li a {
 }
 
 nav ul li a:hover {opacity: .75;}
-
 
 /* Grid System */
 
@@ -390,7 +380,8 @@ nav ul li a:hover {opacity: .75;}
 
 /* Utilities */
 
-.group {display: flex}
+.group {display: flex;}
+.cursor {cursor: pointer;}
 .right {float:right}
 .left {float:left}
 .center {text-align: center;}
@@ -409,5 +400,5 @@ nav ul li a:hover {opacity: .75;}
 .rounded {border-radius: calc(var(--size) / 4);}
 .no-border {border: none}
 .no-padding {padding: 0}
-.no-margin {padding: 0}
+.no-margin {margin: 0}
 .no-theme {--theme: var(--fg)}
