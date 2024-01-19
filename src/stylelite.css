@@ -265,13 +265,9 @@ a.button:hover, button:hover, input[type="reset"]:hover,input[type="submit"]:hov
     cursor: pointer;
 }
 
-button.link:hover {
-    background: var(--bg)
-}
-
 input:disabled {
-    opacity: .5;
-    color: var(--bg);
+    color: #404040;
+    background: #EBEDEF;
     cursor: not-allowed;
 }
 
@@ -339,8 +335,9 @@ nav ul {
 }
 
 nav ul li a {
-    padding: .5rem 1rem;
+    padding: .5rem;
     text-decoration: none;
+    vertical-align: sub;
 }
 
 nav ul li a:hover {opacity: .75;}
