@@ -390,6 +390,7 @@ nav ul li a:hover {opacity: .75;}
 
 /* Utilities */
 
+.group {display: flex}
 .right {float:right}
 .left {float:left}
 .center {text-align: center;}
