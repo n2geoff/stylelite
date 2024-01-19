@@ -187,10 +187,16 @@ details[open] {
     margin-bottom: var(--space);
 }
 
-details>* {padding: calc(var(--space)/2); border-top: 1px solid var(--theme)}
+details>* {
+    box-sizing: border-box;
+    padding: .5rem 1rem;
+}
 
 summary {
+    color: var(--theme);
+    height: 40px;
     background-color: var(--default);
+    border: 1px solid var(--theme);
 }
 
 a.button, button, input {
