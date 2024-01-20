@@ -27,6 +27,8 @@
     --fg: #EAECEE;
 }
 
+* {padding:0;margin:0}
+
 *,*:before,*:after {
     box-sizing: border-box;
 }
@@ -47,13 +49,17 @@ html,body {
 
 div, input, button, textarea, select {margin-bottom: .25rem;}
 
-p {margin: .5rem 0}
+p {margin: 1rem 0}
 
 img,embed,iframe,object,audio,video {
     height: auto;
     max-width: 100%;
     border: none;
 }
+
+ol, ul {margin-left: 1rem}
+
+li {margin-left: 1rem}
 
 label {
     display: inline;
@@ -133,23 +139,18 @@ hr {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    margin: var(--space) 0;
-    padding-bottom: calc(var(--space) / 2);
-    text-transform: capitalize;
-    color: var(--fg);
-
     color: var(--theme);
+    margin: var(--size) 0;
+    padding-bottom: calc(var(--size) / 2);
+    text-transform: capitalize;
 }
 
-h1 {
-    font-size: 2.2rem;
-}
-
+h1 {font-size: 2.2rem}
 h2 {font-size: 1.8rem}
-h3 {font-size: 1.4rem;margin: .5rem 0}
-h4 {font-size: 1.2rem; margin: .25rem 0}
-h5 {font-size: 1rem; margin: .25rem 0}
-h6 {font-size: .9rem; margin: .25rem 0}
+h3 {font-size: 1.4rem}
+h4 {font-size: 1.2rem}
+h5 {font-size: 1.1rem}
+h6 {font-size: 1rem}
 
 a {color: var(--theme)}
 a:hover {color: var(--dark);}
@@ -213,6 +214,7 @@ input[type="radio"]{
 	width: 1.1rem;
 	height: 1.1rem;
 	margin-right: .5rem;
+    margin-top: .65rem;
 }
 
 button, input[type="reset"],input[type="submit"] {
@@ -329,6 +331,7 @@ nav > ul {
     margin: 0 0 0 -2rem;
     display: flex;
     list-style-type: none;
+    margin-bottom: .25rem;
 }
 
 nav ul li a {
