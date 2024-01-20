@@ -8,9 +8,9 @@
 
     --white: #FFF;
     --black: #000;
-    --gray: #DCDCDC;
+    --gray: #777;
 
-    --light: #f1f1f1;
+    --light: #EEE;
     --dark: #222;
 
     --theme: steelblue;
@@ -222,7 +222,9 @@ button, input[type="reset"],input[type="submit"] {
 }
 
 button[disabled], button[disabled]:hover {
-    opacity: .5;
+    color: var(--gray);
+    background-color: var(--light);
+    border:  1px solid var(--gray);
     cursor: not-allowed;
     pointer-events: none;
 }
