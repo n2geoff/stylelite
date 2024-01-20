@@ -62,7 +62,7 @@ ol, ul {margin-left: 1rem}
 li {margin-left: 1rem}
 
 label {
-    display: inline;
+    display: inline-block;
     font-weight: 600;
     color: var(--dark);
     padding: .5rem 0;
