@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stylelite</title>
     <link rel="stylesheet" href="../src/stylelite.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons-css@1.2.0/css/feather.min.css">
     <style>
 
     </style>
@@ -14,10 +15,10 @@
     <main>
         <section>
             <nav>
-                <h1 class="no-margin" style="color: var(--mg);">
+                <h2 class="no-space" style="color: var(--mg);">
                     STYLELITE
                     <span style="color: var(--fg);">CSS</span>
-                </h1>
+                </h2>
                 <ul>
                     <li><a href="#type">Typography</a></li>
                     <li><a href="#forms">Forms</a></li>
@@ -28,11 +29,13 @@
                     <li></li>
                 </ul>
             </nav>
-            <div class="grid">
-                <div style="background: var(--theme);">&nbsp;</div>
-                <div style="background: var(--gray);">&nbsp;</div>
-                <div class="outline">&nbsp;</div>
-            </div>
+            <p>
+                <div class="grid space">
+                    <div style="background: var(--theme);">&nbsp;</div>
+                    <div style="background: var(--gray);">&nbsp;</div>
+                    <div class="outline">&nbsp;</div>
+                </div>
+            </p>
         </section>
         <section>
             <a name="overview"></a>
@@ -143,7 +146,12 @@
                 </div>
                 <div>
                     <label for='email'>Email</label>
-                    <input type='email' name='email' id='email' placeholder='email@example.com'>
+                    <div class="group">
+                        <input type='email' name='email' id='email' placeholder='email@example.com' autocomplete="off">
+                        <label class="addon">
+                            <i class="ft-mail" style="color: #000"></i>
+                        </label>
+                    </div>
                 </div>
                 <div>
                     <label for='password'>Password</label>
@@ -158,7 +166,7 @@
 
                 <div>
                     <label for='selected'>Preferred theme</label>
-                    <select name="selected" id="">
+                    <select name="selected" id="selected">
                         <option value="">Choose One</option>
                         <option value="light">Light</option>
                         <option value="dark">Dark</option>
@@ -185,9 +193,9 @@
             <a name="buttons"></a>
             <h2>Buttons</h2>
             <div class="grid">
-                <button>Theme</button>
+                <button>Default</button>
                 <button disabled>Disabled</button>
-                <button class="default">Default</button>
+                <button class="outline">Outline</button>
                 <button class="link">Link</button>
             </div>
 
