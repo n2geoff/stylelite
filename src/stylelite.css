@@ -1,6 +1,5 @@
 /*! Stylelite v:0.6.0 | MIT LICENSE | https://github.com/n2geoff/stylelite */
 :root {
-    --space: 1rem;
     --size: 1rem;
     --radius: 0rem;
     --fg: #17202A;
@@ -20,7 +19,6 @@
     --warning: #B7950B;
     --danger: #C0392B;
     --success: #1E8449;
-    --default: #EEE;
 }
 
 [data-theme=dark] {
@@ -67,7 +65,7 @@ label {
 
 main {
     margin: 0 auto;
-    padding: var(--space);
+    padding: var(--size);
     max-width: 1140px;
 }
 
@@ -117,10 +115,10 @@ legend {
 }
 
 blockquote {
-    margin: var(--space) 0;
+    margin: var(--size) 0;
     color: var(--black);
-    background: var(--default);
-    padding: var(--space);
+    background: var(--light);
+    padding: var(--size);
 }
 
 blockquote.primary {background: #EBF5FB; color: var(--primary); border: 1px solid var(--primary)}
@@ -162,21 +160,22 @@ section, article {
 
 article {
     border: 1px solid rgba(0,0,0,.125);
-    background: var(--default);
-    padding: var(--space);
+    background: var(--light);
+    padding: var(--size);
 }
 
 /* Forms */
 
 details {
-    margin: var(--space) 0;
-    color: var(--black);
+    margin: var(--size) 0;
+    color: var(--fg);
     cursor: pointer;
 }
 
 details[open] {
-    background-color: var(--default);
-    margin-bottom: var(--space);
+    background-color: var(--bg);
+    margin-bottom: var(--size);
+    border: 1px solid var(--theme);
 }
 
 details>* {
@@ -187,7 +186,7 @@ details>* {
 summary {
     color: var(--theme);
     height: 40px;
-    background-color: var(--default);
+    background-color: var(--bg);
     border: 1px solid var(--theme);
 }
 
@@ -240,7 +239,7 @@ a.button, button {
 }
 
 button.default {
-    background: var(--default);
+    background: var(--light);
     color: var(--black);
 }
 
@@ -272,8 +271,7 @@ a.button:hover, button:hover, input[type="reset"]:hover,input[type="submit"]:hov
 }
 
 select:disabled, textarea:disabled,input:disabled {
-    color: #404040;
-    background: #EBEDEF;
+    background: #EEE;
     cursor: not-allowed;
 }
 
@@ -293,14 +291,14 @@ select,textarea {
     color: var(--fg);
     background: var(--bg);
     border-radius: var(--radius);
-    padding: 0 var(--space);
+    padding: 0 var(--size);
     cursor: pointer;
 }
 
 select {
     background: var(--bg) no-repeat 100%;
     color: var(--fg);
-    padding: 0 clamp(.5rem, var(--space), 2rem);
+    padding: 0 clamp(.5rem, var(--size), 2rem);
     appearance: none;
     background-size: 1ex;
     background-origin: content-box;
@@ -312,7 +310,7 @@ textarea {
     resize: vertical;
     border: 1px solid var(--theme);
     height: calc(var(--size) * 6rem);;
-    padding: clamp(.5rem, var(--space), 2rem);
+    padding: clamp(.5rem, var(--size), 2rem);
     cursor: text;
     color: var(--fg);
 }
@@ -332,12 +330,12 @@ nav > ul {
 }
 
 nav ul li a {
+    font-size: 1rem;
     padding: .5rem;
     text-decoration: none;
-    vertical-align: sub;
 }
 
-nav ul li a:hover {opacity: .75;}
+nav ul li a:hover {color: var(--dark);}
 
 /* Grid System */
 
@@ -386,8 +384,8 @@ nav ul li a:hover {opacity: .75;}
 .outline {background-color: transparent; color: var(--theme); border: 1px solid var(--fg)}
 .underline {border-bottom: 1px solid var(--mg)}
 .border {border: 1px solid var(--theme)}
-.padding {padding: var(--space)}
-.margin {margin: var(--space)}
+.padding {padding: var(--size)}
+.margin {margin: var(--size)}
 .title {margin: 0; padding:0}
 .subtitle {margin-top: -.25rem; font-size: smaller};
 .spaceless {margin: 0; padding:0}
