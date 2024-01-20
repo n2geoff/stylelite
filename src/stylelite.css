@@ -324,23 +324,21 @@ textarea {
 nav {
     display: flex;
     justify-content: space-between;
+    padding-bottom: .25rem;
     border-bottom: 1px solid var(--theme);
 }
 
-nav > ul {
-    margin: 0 0 0 -1rem;
-    display: flex;
-    list-style-type: none;
-    margin-bottom: .25rem;
+nav ul {display: flex;list-style-type: none;}
+nav li {padding-left: 1rem;}
+nav a {text-decoration: none;}
+
+nav.navbar {
+    padding: 1rem;
+    background: var(--theme);
+    color: var(--white);
 }
 
-nav ul li a {
-    font-size: 1rem;
-    padding: .5rem;
-    text-decoration: none;
-}
-
-nav ul li a:hover {color: var(--dark);}
+nav.navbar a {color: var(--white)}
 
 /* Grid System */
 
