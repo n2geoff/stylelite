@@ -244,6 +244,13 @@ button.link {
     color: var(--theme)
 }
 
+button.link:hover {
+    background: none;
+    border: none;
+    color: var(--theme);
+    text-decoration: underline;
+}
+
 a.button, button {
     background: var(--theme);
     color: var(--white);
