@@ -288,7 +288,7 @@ a.button:hover, button:hover, input[type="reset"]:hover,input[type="submit"]:hov
     cursor: pointer;
 }
 
-select:disabled, textarea:disabled,input:disabled, input:read-only {
+select:disabled, textarea:disabled,input:disabled {
     cursor: not-allowed;
     pointer-events: none;
     border-color: var(--mg);
