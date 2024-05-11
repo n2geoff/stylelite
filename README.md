@@ -8,11 +8,11 @@ It *may* be light on `class`, but it makes up for it in *[style](src/extras)*
 
 All in **3kb gzipped!**
 
-### Features
+## Features
 
 - Tiny, 3kb
 - Class-lite
-- With Complementary Utility Classes
+- Utility Classes
   - Layout
     - `.row`, `.col`, `.grid`, `.group`, `.left`, `.right`, `.center`
 
@@ -20,10 +20,13 @@ All in **3kb gzipped!**
 - Dynamic, 12 Custom CSS Vars
 - Includes Light and Dark Themes
 
+Designed to work with default [Feather Icons](https://feathericons.com/)
+
+
 > WARNING: ever-green browsers need only apply ;)
 
 
-## Check it Out
+## Get Started
 
 Via `jsdelivr` CDN
 
@@ -34,7 +37,12 @@ Via `jsdelivr` CDN
 
 or [Download](https://raw.githubusercontent.com/n2geoff/stylelite/main/dist/stylelite.min.css)
 
+Include Feather Icons
 
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons-css/css/feather.min.css">
+
+```
 
 ## Dark Mode
 
@@ -52,5 +60,5 @@ Keep it small, but immediately useful.
 
 Tweaks to hit that SWEET spot:
 
-- Dark mode use native browser scrollbars/classes
+- Dark mode use native browser scroll bars/classes
 - Color Utility (extras)
