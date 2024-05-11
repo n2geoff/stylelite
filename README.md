@@ -28,7 +28,7 @@ All in **3kb gzipped!**
 Via `jsdelivr` CDN
 
 ```html
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/n2geoff/stylelite/dist/stylelite.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/n2geoff/stylelite/dist/stylelite.min.css">
 
 ```
 
