@@ -337,6 +337,8 @@ textarea {
     color: var(--fg);
 }
 
+*:disabled, .disable, .disable {pointer-events: none;}
+
 /* Navigation */
 
 nav {
@@ -357,6 +359,8 @@ nav.navbar {
 }
 
 nav.navbar a {color: var(--white)}
+
+
 
 /* Grid System */
 
@@ -394,18 +398,12 @@ nav.navbar a {color: var(--white)}
 /* Utilities */
 
 .group {display: flex;}
-.pointer {cursor: pointer;}
 .right {float:right}
 .left {float:left}
 .center {text-align: center;}
 .clear {content:'';display: table;clear:both}
-.outline {background: transparent; color: var(--theme); border: 1px solid var(--theme)}
-.underline {border-bottom: 1px solid var(--mg)}
 .rounded {border-radius: calc(var(--size) / 4);}
 .border {border: 1px solid var(--theme)}
-.no-space {margin: 0; padding:0;}
 .no-border {border: none}
-.no-padding {padding: 0}
-.no-margin {margin: 0}
+.no-space {margin: 0; padding:0;}
 .no-theme {--theme: var(--fg)}
-*:disabled, .disable, .disable {pointer-events: none;}
