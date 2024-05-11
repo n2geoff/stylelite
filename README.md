@@ -1,18 +1,22 @@
 # Stylelite CSS
 
-> CSS Classlite For Minimalists
+> Styles that work for you
 
-Stylelite is a tiny-dynamic-classlite stylesheet foundation for rapid prototyping and project growth.
+Stylelite is a tiny-dynamic-classlite css foundation for any project.  Easy to extend, with extras already available, and Great for rapid prototyping.
 
-It *may* be light on `class`, but it *oozes* [style](src/extras)
+It *may* be light on `class`, but it makes up for it in *[style](src/extras)*
 
-All in **2kb gzipped!**
+All in **3kb gzipped!**
 
 ### Features
 
-- Tiny, 2kb
-- Classlite
-- Dynamic, 6 Custom CSS Vars
+- Tiny, 3kb
+- Class-lite
+- Complementary classes for
+  - Layout: .row, .col, .grid
+  - Utility: .left, .right, ect...
+  - Extras: pick-and-choose expanded style options
+- Dynamic, 12 Custom CSS Vars
 - Includes Light and Dark Themes
 
 > WARNING: ever-green browsers need only apply ;)
@@ -37,5 +41,8 @@ Keep it small, but immediately useful.
 
 Tweaks to hit that SWEET spot:
 
-- Support more tags
-  - `details` & `summary`
+- dialog tag support (extras)
+- spinner (extras)
+- toggle/switch (extras)
+- Navigation Tabs (extras)
+- Color Utility (extras)
