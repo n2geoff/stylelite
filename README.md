@@ -12,10 +12,11 @@ All in **3kb gzipped!**
 
 - Tiny, 3kb
 - Class-lite
-- Complementary classes for
-  - Layout: .row, .col, .grid
-  - Utility: .left, .right, ect...
-  - Extras: pick-and-choose expanded style options
+- With Complementary Utility Classes
+  - Layout
+    - `.row`, `.col`, `.grid`, `.group`, `.left`, `.right`, `.center`
+  
+- **extras/** supplies pick-and-choose styles to expanded your options
 - Dynamic, 12 Custom CSS Vars
 - Includes Light and Dark Themes
 
@@ -24,10 +25,20 @@ All in **3kb gzipped!**
 
 ## Check it Out
 
-- [Download](https://raw.githubusercontent.com/n2geoff/stylelite/main/dist/stylelite.min.css)
+Via `jsdelivr` CDN
+
+```
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/n2geoff/stylelite/dist/stylelite.min.css">
+
+```
+
+or [Download](https://raw.githubusercontent.com/n2geoff/stylelite/main/dist/stylelite.min.css)
 
 
-> Add `data-theme="dark"` to the `html` tag for a taste of the dark side
+
+## Dark Mode 
+
+Add `data-theme="dark"` to the `html` tag for a taste of the dark side
 
 
 ## LICENSE
@@ -41,8 +52,5 @@ Keep it small, but immediately useful.
 
 Tweaks to hit that SWEET spot:
 
-- dialog tag support (extras)
-- spinner (extras)
-- toggle/switch (extras)
-- Navigation Tabs (extras)
+- Dark mode use native browser scrollbars/classes
 - Color Utility (extras)
