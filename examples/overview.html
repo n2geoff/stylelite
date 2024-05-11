@@ -7,6 +7,10 @@
     <title>Stylelite</title>
     <link rel="stylesheet" href="../src/stylelite.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons-css@1.2.0/css/feather.min.css">
+    <style>
+        .fill {height: 100%; width: 100%}
+        .grid-center {align-self: center; justify-self: center;}
+    </style>
 </head>
 <body>
     <main>
@@ -20,7 +24,7 @@
                     <li><a href="#type">Typography</a></li>
                     <li><a href="#forms">Forms</a></li>
                     <li><a href="#table">Tables</a></li>
-                    <li><a href="#grid">Grid Layout</a></li>
+                    <li><a href="#grid">Layout</a></li>
                     <li><a href="#components">Components</a></li>
                     <li><a href="#utilities">Utilities</a></li>
                     <li></li>
@@ -235,8 +239,46 @@
         </section>
 
         <section>
+            <a name="components"></a>
+            <h2 class="underline">Components</h2>
+
+            <div class="grid">
+                <div>
+                    <section class="border">
+                        <header style="background: var(--theme); padding: 0 1rem; color: #FFF">
+                            <strong>Dialogs</strong>
+                        </header>
+                        <main style="background: #FFF">
+                            The native dialog
+                            element is supported
+                        </main>
+                        <footer class="grid">
+                            <button class="" id="dialog">Open Modal</button>
+                        </footer>
+                    </section>
+                </div>
+                <article class="grid">
+                    <div class="grid-center">
+                        More...
+                    </div>
+                </article>
+                <article class="grid">
+                    <div class="grid-center">
+                        More...
+                    </div>
+                </article>
+            </div>
+            <dialog>
+                <p>Default Dialog Modal</p>
+                <form method="dialog">
+                    <button>Close</button>
+                </form>
+            </dialog>
+        </section>
+
+        <section>
             <a name="grid"></a>
-            <h2>Grid System</h2>
+            <h2>Layout Systems</h2>
             <div>
                 The flex-based grid system dynamically divides content on the number of
                 child elements under <code>row</code>, be that a plain <code>div</code>(auto) or <code>col-*</code>.
@@ -349,5 +391,12 @@
             </table>
         </section>
     </main>
+    <script>
+        const $ = document.querySelector.bind(document);
+
+        $("#dialog").addEventListener("click", () => (
+            $("dialog").showModal()
+        ));
+    </script>
 </body>
 </html>
