@@ -1,4 +1,4 @@
-/*! Stylelite v:0.6.7 | MIT LICENSE | https://github.com/n2geoff/stylelite */
+/*! Stylelite v:0.7.0 | MIT LICENSE | https://github.com/n2geoff/stylelite */
 :root {
     --size: 1rem;
     --radius: 0rem;
@@ -102,6 +102,10 @@ th,td {
     border-bottom: 1px solid var(--theme);
 }
 
+table.striped tbody>:nth-child(2n-1) {
+    background: #f5f5f5;
+}
+
 table.condensed * {padding:0}
 
 fieldset {
@@ -193,6 +197,9 @@ summary {
     background-color: var(--bg);
     border: 1px solid var(--theme);
 }
+
+summary:hover {cursor: pointer;}
+details:not(summary):hover {cursor: default}
 
 a.button, button, input {
     display: inline-block;
