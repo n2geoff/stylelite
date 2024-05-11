@@ -15,7 +15,7 @@ All in **3kb gzipped!**
 - With Complementary Utility Classes
   - Layout
     - `.row`, `.col`, `.grid`, `.group`, `.left`, `.right`, `.center`
-  
+
 - **extras/** supplies pick-and-choose styles to expanded your options
 - Dynamic, 12 Custom CSS Vars
 - Includes Light and Dark Themes
@@ -27,7 +27,7 @@ All in **3kb gzipped!**
 
 Via `jsdelivr` CDN
 
-```
+```html
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/n2geoff/stylelite/dist/stylelite.min.css">
 
 ```
@@ -36,7 +36,7 @@ or [Download](https://raw.githubusercontent.com/n2geoff/stylelite/main/dist/styl
 
 
 
-## Dark Mode 
+## Dark Mode
 
 Add `data-theme="dark"` to the `html` tag for a taste of the dark side
 
