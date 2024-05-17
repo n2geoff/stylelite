@@ -130,6 +130,7 @@ blockquote {
     background: var(--light);
     padding: var(--size);
     border-left: 8px solid var(--theme);
+    border-radius: var(--radius);
 }
 
 hr {
