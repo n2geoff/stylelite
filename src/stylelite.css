@@ -68,6 +68,11 @@ label.addon {
     border: 1px solid var(--theme);
 }
 
+code {
+    background: var(--light);
+    padding: .25rem
+}
+
 main {
     margin: 0 auto;
     padding: var(--size);
