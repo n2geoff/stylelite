@@ -10,7 +10,7 @@ All in **3kb gzipped!**
 
 ## Features
 
-- Tiny, 3kb
+- Tiny, 2kb
 - Class-lite
 - Utility Classes
   - Layout
