@@ -344,7 +344,7 @@ dialog {
     max-width: 85%;
 }
 
-/* Grid System */
+/* Layout Utilities */
 
 .grid {
     display: grid;
@@ -352,15 +352,8 @@ dialog {
     grid-template-columns: repeat(auto-fit, minmax(0%, 1fr));
 }
 
-/* Utilities */
-
 .group {display: flex;}
 .right {float:right}
 .left {float:left}
 .center {text-align: center;}
 .clear {content:'';display: table;clear:both}
-.rounded {border-radius: calc(var(--size) / 4);}
-.border {border: 1px solid var(--theme)}
-.no-border {border: none}
-.no-space {margin: 0; padding:0;}
-.no-theme {--theme: var(--fg)}
