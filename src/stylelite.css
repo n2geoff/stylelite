@@ -129,6 +129,7 @@ blockquote {
     color: var(--black);
     background: var(--light);
     padding: var(--size);
+    border-left: 8px solid var(--theme);
 }
 
 hr {
@@ -160,6 +161,7 @@ section, article {
 article {
     border: 1px solid rgba(0,0,0,.125);
     background: var(--light);
+    color: var(--dark);
     padding: var(--size);
 }
 
