@@ -15,6 +15,7 @@
 
     --theme: steelblue;
 
+    --info: steelblue;
     --warning: #B7950B;
     --danger: #C0392B;
     --success: #1E8449;
@@ -130,7 +131,7 @@ blockquote {
     padding: var(--size);
 }
 
-blockquote.primary {background: #EBF5FB; color: var(--theme); border: 1px solid var(--theme)}
+blockquote.info {background: #EBF5FB; color: var(--info); border: 1px solid var(--theme)}
 blockquote.danger {background: #FDEDEC; color: var(--danger); border: 1px solid var(--danger)}
 blockquote.warn {background: #FEF9E7; color: var(--warning) ; border: 1px solid var(--warning)}
 blockquote.success {background: #EAFAF1; color: var(--success); border: 1px solid var(--success)}
@@ -250,42 +251,26 @@ button.link:hover {
     text-decoration: underline;
 }
 
-a.button, button {
+a.button, button, input[type="submit"] {
     background: var(--theme);
     color: var(--white);
 }
 
-button.default {
-    background: var(--light);
-    color: var(--black);
-}
-
-button.primary {
-    background: var(--theme);
-    color: var(--white);
-}
-
-button.warning {
-    background: var(--warning);
-    color: var(--white);
-}
-
-button.danger {
-    background: var(--danger);
-    color: var(--white);
-}
-
-button.success {
-    background: var(--success);
-    color: var(--white);
+button.outline {
+    background: none;
+    outline: var(--theme);
+    color: var(--fg);
 }
 
 a.button:hover, button:hover, input[type="reset"]:hover,input[type="submit"]:hover {
-    background: var(--dark);
-    border: 2px solid var(--theme);
-    color: var(--light);
+    filter:brightness(90%) !important;
     cursor: pointer;
 }
+
+button.info {background: var(--info);color: var(--white);}
+button.warning {background: var(--warning);color: var(--white);}
+button.danger {background: var(--danger);color: var(--white);}
+button.success {background: var(--success);color: var(--white);}
 
 select:disabled, textarea:disabled,input:disabled {
     cursor: not-allowed;
