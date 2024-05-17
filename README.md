@@ -6,7 +6,7 @@ Stylelite is a tiny-dynamic-classlite css foundation for any project.  Easy to e
 
 It *may* be light on `class`, but it makes up for it in *[style](src/extras)*
 
-All in **3kb gzipped!**
+All in **2kb gzipped!**
 
 ## Features
 
