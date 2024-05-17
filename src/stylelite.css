@@ -1,4 +1,4 @@
-/*! Stylelite v:0.7.0 | MIT LICENSE | https://github.com/n2geoff/stylelite */
+/*! Stylelite v:0.7.1 | MIT LICENSE | https://github.com/n2geoff/stylelite */
 :root {
     --size: 1rem;
     --radius: 0rem;
@@ -26,7 +26,7 @@
     --fg: #EAECEE;
 }
 
-* {padding:0;margin:0}
+* {margin:0}
 
 *,*::before,*::after {
     box-sizing: border-box;
@@ -36,14 +36,10 @@ html,body {
     background: var(--bg);
     color: var(--fg);
     accent-color: var(--theme);
-    margin: 0;
-    padding: 0;
     font-family: system-ui, sans-serif;
     font-size: 16px;
     letter-spacing: 0.0125em;
     line-height: 1.5rem;
-    box-sizing: border-box;
-    padding: 0;
 }
 
 div, label, input, button, textarea, select {margin-bottom: .25rem;}
