@@ -12,9 +12,8 @@ All in **2kb gzipped!**
 
 - Tiny, 2kb
 - Class-lite
-- Utility Classes
-  - Layout
-    - `.row`, `.col`, `.grid`, `.group`, `.left`, `.right`, `.center`
+- Few Layout Utility Classes
+    - `.grid`, `.group`, `.left`, `.right`, `.center` `.clear`
 
 - **extras/** supplies pick-and-choose styles to expanded your options
 - Dynamic, 12 Custom CSS Vars
