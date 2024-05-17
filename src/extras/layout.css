@@ -1,17 +1,9 @@
 /* Layout System */
 
-main {
+.container {
     margin: 0 auto;
     padding: 1rem;
     max-width: 1140px;
-}
-
-.flex {display: flex;}
-
-.grid {
-    display: grid;
-    gap: .25rem;
-    grid-template-columns: repeat(auto-fit, minmax(0%, 1fr));
 }
 
 .row {
