@@ -1,0 +1,16 @@
+:root {
+    --info: steelblue;
+    --warning: #B7950B;
+    --danger: #C0392B;
+    --success: #1E8449;
+}
+
+blockquote.info {background: #EBF5FB; color: var(--info); border: 1px solid var(--theme)}
+blockquote.danger {background: #FDEDEC; color: var(--danger); border: 1px solid var(--danger)}
+blockquote.warn {background: #FEF9E7; color: var(--warning) ; border: 1px solid var(--warning)}
+blockquote.success {background: #EAFAF1; color: var(--success); border: 1px solid var(--success)}
+
+button.info {background: var(--info);color: var(--white);}
+button.warning {background: var(--warning);color: var(--white);}
+button.danger {background: var(--danger);color: var(--white);}
+button.success {background: var(--success);color: var(--white);}

@@ -1,0 +1,21 @@
+/* nav tabs */
+
+nav.tabs ul {
+    margin-left: -.5rem !important;
+}
+
+nav.tabs li {
+    margin: 0;
+}
+
+nav.tabs a.active {
+    padding: .5rem;
+    background: var(--theme);
+    border-bottom: 4px solid var(--theme);
+    color: var(--bg);
+    border-radius: 8px 8px 0 0;
+}
+
+nav.tabs li {
+    padding: .25rem .5rem;
+}

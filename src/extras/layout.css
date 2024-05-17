@@ -42,3 +42,4 @@ main {
 .right {float:right}
 .left {float:left}
 .center {text-align: center;}
+.clear {content:'';display: table;clear:both}
