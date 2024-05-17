@@ -44,9 +44,46 @@ Include Feather Icons
 
 ```
 
-## Dark Mode
+## Customize
+
+While **Stylelite** is a drop-and-forget cascading style sheet (css) file, that doesn't mean you cannot customize it -- easily!
+
+It is RECOMMENDED you import **Stylelite** via a `main.css` or the like referenced in your web application, like
+
+```css
+@import url(stylelite);
+
+/* Add Your Styles Below */
+
+```
+
+Below are some simple and common examples.
+
+### Dark Mode
 
 Add `data-theme="dark"` to the `html` tag for a taste of the dark side
+
+```html
+<html lang="en" data-theme="dark">
+```
+
+> DEFAULT: data-theme="light"
+
+### Theme
+
+The stock theme color is `steelblue`, but you can change it to anything you want just add
+
+```css
+:root {
+  --theme: Magenta;
+}
+```
+
+> NOTE: Light mode (default) should use dark theme colors, and dark mode should use light theme colors
+
+### Rounded Corners
+
+By default Stylelite is a boxy design, but if you want a rounded design, just set `--radius` to something.  try `.4rem`
 
 
 ## LICENSE
@@ -58,7 +95,12 @@ Add `data-theme="dark"` to the `html` tag for a taste of the dark side
 
 Keep it small, but immediately useful.
 
-Tweaks to hit that SWEET spot:
+Tweak to hit that SWEET spot:
 
 - Dark mode use native browser scroll bars/classes
-- Color Utility (extras)
+- Extras
+  - Colors  - Bootstrap-inspired classes
+  - Layout  - Little more flex-based layout options
+  - Switch  - More modern UI component
+  - Spinner - Identify content is loading
+  - Tabs    - Another useful modern UI component

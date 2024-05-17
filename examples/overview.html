@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stylelite</title>
-    <link rel="stylesheet" href="../src/stylelite.css">
+    <link rel="stylesheet" href="../src/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons-css@1.2.0/css/feather.min.css">
     <style>
         .fill {height: 100%; width: 100%}
         .grid-center {align-self: center; justify-self: center;}
+        .border {border: 1px solid var(--theme)}
+        .no-space {margin: 0; padding:0;}
         header, footer {line-height: 3rem; height: 3rem;}
     </style>
 </head>
-<body>
+<body class="">
     <main>
         <section>
             <nav>
@@ -25,9 +27,9 @@
                     <li><a href="#type">Typography</a></li>
                     <li><a href="#forms">Forms</a></li>
                     <li><a href="#table">Tables</a></li>
-                    <li><a href="#grid">Layout</a></li>
                     <li><a href="#components">Components</a></li>
                     <li><a href="#utilities">Utilities</a></li>
+                    <li><a href="#customize">Customize</a></li>
                     <li></li>
                 </ul>
             </nav>
@@ -41,14 +43,20 @@
         </section>
         <section>
             <a name="overview"></a>
-            <h2 class="underline">Overview</h2>
+            <h2>Overview</h2>
             <div>
-                <code>DIV</code> is not the only tag available to your designs.
-                Mimic traditional <code>.container</code> class by just using a <code>MAIN</code> tag.
-                <p></p>
-                Need to divide major sections of your code, eh...use <code>SECTION</code> tag.
-                <p></p>
-                And for that little extra content flair, wrap in an <code>ARTICLE</code> tag.
+                <p>
+                    <code>DIV</code> is not the only tag available to your designs.
+                    Mimic traditional <code>.container</code> class by just using a <code>MAIN</code> tag,
+                    which by default centers your content to an 1140 width.
+                </p>
+                <p>
+                    Need to divide major sections of your code, eh...use <code>SECTION</code> tag.
+                    Need little extra content flair, wrap in an <code>ARTICLE</code> tag.
+                </p>
+                <p>
+                    Use <i>AS-IS</i> or <a href="#customize">Customize</a>
+                </p>
             </div>
         </section>
         <section>
@@ -199,13 +207,6 @@
                 <button class="outline">Outline</button>
                 <button class="link">Link</button>
             </div>
-
-            <div class="grid">
-                <button class="info">Info</button>
-                <button class="warning">Warning</button>
-                <button class="danger">Danger</button>
-                <button class="success">Success</button>
-            </div>
         </section>
         <section>
             <a name="table"></a>
@@ -240,7 +241,12 @@
 
         <section>
             <a name="components"></a>
-            <h2 class="underline">Components</h2>
+            <h2>Components</h2>
+
+            <p>
+                These are native UI components that typically do not have any
+                style
+            </p>
 
             <div class="grid">
                 <article class="border">
@@ -248,11 +254,16 @@
                         <strong>Dialogs</strong>
                     </header>
                     <main>
-                        The native dialog
-                        element is supported
+                        A native modal UI element exists as <code>dialog</code>
+                        and is supported with a little javascript.
+                        <p>
+                            SEE: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" target="_NEW">
+                                MDN Documentation
+                            </a>
+                        </p>
                     </main>
                     <footer class="grid">
-                        <button class="fill no-space" id="dialog">Open Modal</button>
+                        <button class="fill" id="dialog">Open Modal</button>
                     </footer>
                 </article>
                 <section class="grid border">
@@ -275,119 +286,94 @@
         </section>
 
         <section>
-            <a name="grid"></a>
-            <h2>Layout Systems</h2>
-            <div>
-                The flex-based grid system dynamically divides content on the number of
-                child elements under <code>row</code>, be that a plain <code>div</code>(auto) or <code>col-*</code>.
-
-                Column sizes range from <code>col-1</code> to <code>col-5</code>
-                a <code>col-5</code> is 5x <code>col-1</code>
-
-                <blockquote>
-                    if <code>col-*</code> is not defined on a <code>div</code>, it is considered a <code>col-1</code>
-                </blockquote>
-            </div>
-            <section>
-                <div class="row">
-                    <div class="border center">auto</div>
-                </div>
-                <div class="row">
-                    <div class="border center">auto</div>
-                    <div class="border center">auto</div>
-                </div>
-                <div class="row">
-                    <div class="border center">auto</div>
-                    <div class="border center">auto</div>
-                    <div class="border center">auto</div>
-                </div>
-                <div class="row">
-                    <div class="border center">auto</div>
-                    <div class="border center">auto</div>
-                    <div class="border center">auto</div>
-                    <div class="border center">auto</div>
-                </div>
-                <div class="row">
-                    <div class="border center">auto</div>
-                    <div class="border center">auto</div>
-                    <div class="border center">auto</div>
-                    <div class="border center">auto</div>
-                    <div class="border center">auto</div>
-                </div>
-                <div class="row">
-                    <div class="border center col-2">2</div>
-                    <div class="border center">auto</div>
-                    <div class="border center">auto</div>
-                    <div class="border center">auto</div>
-                    <div class="border center">auto</div>
-                </div>
-                <div class="row">
-                    <div class="border center col-3">3</div>
-                    <div class="border center">auto</div>
-                    <div class="border center">auto</div>
-                    <div class="border center">auto</div>
-                    <div class="border center">auto</div>
-                </div>
-                <div class="row">
-                    <div class="border center col-4">4</div>
-                    <div class="border center">auto</div>
-                    <div class="border center">auto</div>
-                    <div class="border center">auto</div>
-                    <div class="border center">auto</div>
-                </div>
-                <div class="row">
-                    <div class="border center col-5">5</div>
-                    <div class="border center">auto</div>
-                    <div class="border center">auto</div>
-                    <div class="border center">auto</div>
-                    <div class="border center">auto</div>
-                </div>
-            </section>
-        </section>
-        <section>
             <a name="utilities"></a>
-            <h2>Utility</h2>
+            <h2>Misc Utility Classes</h2>
             <table>
                 <tr>
                     <th><code>.grid</code></th>
-                    <td>dynamic grid layout helper</td>
-                </tr>
-                <tr>
-                    <th><code>.group</code></th>
-                    <td>treats content as flex</td>
-                </tr>
-                <tr>
-                    <th><code>.left</code></th>
-                    <td>float content left</td>
-                </tr>
-                <tr>
-                    <th><code>.right</code></th>
-                    <td>float content right</td>
-                </tr>
-                <tr>
-                    <th><code>.center</code></th>
-                    <td>text aligns content center</td>
-                </tr>
-                <tr>
-                    <th><code>.no-space</code></th>
-                    <td>removes padding & margin</td>
-                </tr>
-                <tr>
-                    <th><code>.no-border</code></th>
-                    <td>removes borders</td>
-                </tr>
-                <tr>
-                    <th><code>.no-theme</code></th>
                     <td>
-                        removes theme flair
+                        a <code>display:grid</code> layout helper, that acts a lot like
+                        <code>.row</code> but without the column control
                     </td>
                 </tr>
                 <tr>
-                    <th><code>.clear</code></th>
-                    <td> clear float fix</td>
+                    <th><code>.group</code></th>
+                    <td>
+                        really just <code>display:flex</code> however used on
+                        <code>input</code> groups provides form element designs
+                    </td>
                 </tr>
             </table>
         </section>
+
+        <section>
+            <a name="customize"></a>
+            <hr>
+            <h1>Customize</h1>
+            <hr>
+            <p>
+                <code>/extras</code> provides some useful styles that complement
+                <strong>Stylelite</strong> and have been removed to keep it focused
+                closer to a classless css solution -- and smaller.
+            </p>
+            <blockquote>
+                <strong>NOTE:</strong> Some extras exist in <strong>Stylelite</strong>,
+                but are also useful in isolation
+            </blockquote>
+        </section>
+
+        <section>
+            <h4>CSS Variables</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Variable</th>
+                        <th>Description</th>
+                        <th>Default</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <th><code>--theme</code> (color)</th>
+                    <td>Designing a site around a theme color, set here</td>
+                    <td><code>steelblue</code></td>
+                </tr>
+                <tr>
+                    <th><code>--radius</code></th>
+                    <td>Prefer rounded-corners, try <code>.4rem</code></td>
+                    <td><code>0rem</code></td>
+                </tr>
+                <tr>
+                    <th><code></code></th>
+                    <td>There are 11 variables, 8 are neutral color variations</td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h4>Dark Mode</h4>
+            Add <code>data-theme="dark"</code> to your <code>html</code> tag
+        </section>
+
+        <section>
+            <h4>Colors</h4>
+            <p>
+                Customize with your own styles or some examples available extras like
+            </p>
+
+            <blockquote>
+                Bootstrap-inspired color classes found
+                in <code>extras/colors.css</code>
+            </blockquote>
+
+            <div class="grid">
+                <button class="info">Info</button>
+                <button class="warning">Warning</button>
+                <button class="danger">Danger</button>
+                <button class="success">Success</button>
+            </div>
+        </section>
+
     </main>
     <script>
         const $ = document.querySelector.bind(document);
