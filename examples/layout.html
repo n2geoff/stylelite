@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout System</title>
+    <link rel="stylesheet" href="../src/stylelite.css">
+    <link rel="stylesheet" href="../src/extras/layout.css">
+    <style>
+        .border {border: 1px solid #000}
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Layout System</h1>
+        <section>
+            <p>
+                I have always used tiny CSS layout systems.  They always seemed
+                to be the missing ingredient to web design.  Initially I used <strong>tables</strong> (I know)
+                then <strong>percent-based (%)</strong> systems, you may mock these design
+                choices today, but they worked <u>EVERYWHERE!</u>
+            </p>
+            <p>
+                Bullet-Proof.
+            </p>
+            <p>
+                As the web developed, so to did CSS and we got flex box.  This layout
+                utility has been a staple of my designs going back to the percent-based designs
+                20+ years ago, but updated to use flex box - same classes, just a flex implementation
+            </p>
+            <blockquote>
+                I use grid styles more today, like the utility class provided in
+                <a href="https://github.com/n2geoff/stylelite">Stylelite CSS</a>
+            </blockquote>
+        </section>
+
+        <section>
+            <h2>Get Layout CSS</h2>
+            <p>
+                Currently this resides in the Stylelite CSS extras folder here:
+                <a href="https://github.com/n2geoff/stylelite/blob/main/src/extra/layout.css">Layout CSS</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Usage</h2>
+            <div>
+                The flex-based system dynamically divides content on the number of
+                child elements under <code>row</code>, be that a plain <code>div</code>(auto) or <code>col-*</code>.
+
+                Column sizes range from <code>col-1</code> to <code>col-5</code>
+                a <code>col-5</code>
+
+                <p>
+                    These are relative sizes, so a <code>col-5</code> is 5 times
+                    larger than a <code>col-1</code>
+                </p>
+
+                <blockquote>
+                    if <code>col-*</code> is not defined on a <code>div</code>, it is considered a <code>col-1</code>
+                </blockquote>
+            </div>
+            <section>
+                <div class="row">
+                    <div class="border center">auto</div>
+                </div>
+                <div class="row">
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                </div>
+                <div class="row">
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                </div>
+                <div class="row">
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                </div>
+                <div class="row">
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                </div>
+                <div class="row">
+                    <div class="border center col-2">2</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                </div>
+                <div class="row">
+                    <div class="border center col-3">3</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                </div>
+                <div class="row">
+                    <div class="border center col-4">4</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                </div>
+                <div class="row">
+                    <div class="border center col-5">5</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                    <div class="border center">auto</div>
+                </div>
+            </section>
+            <section>
+                <p>
+                    To complement the layout system, there are a few utility classes
+                    that I commonly reach for that are included
+                </p>
+                <h3>Layout Utilities</h3>
+                <table>
+                    <tr>
+                        <th><code>.container</code></th>
+                        <td>used to layout a page, or provide nice spacing for content</td>
+                    </tr>
+                    <tr>
+                        <th><code>.left</code></th>
+                        <td>float content left</td>
+                    </tr>
+                    <tr>
+                        <th><code>.right</code></th>
+                        <td>float content right</td>
+                    </tr>
+                    <tr>
+                        <th><code>.center</code></th>
+                        <td>text aligns content center</td>
+                    </tr>
+                    <tr>
+                        <th><code>.clear</code></th>
+                        <td> clear float fix</td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
