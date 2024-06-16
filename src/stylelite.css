@@ -1,4 +1,4 @@
-/*! Stylelite v:0.8.0 | MIT LICENSE | https://github.com/n2geoff/stylelite */
+/*! Stylelite v:0.8.1 | MIT LICENSE | https://github.com/n2geoff/stylelite */
 :root {
     --size: 1rem;
     --radius: 0rem;
@@ -321,6 +321,7 @@ nav {
 
 nav ul {display: flex;list-style-type: none;margin:0;padding:0}
 nav ul li {padding:0rem .5rem;margin:0}
+nav ul li:first-child {margin-left:0;margin-left:0}
 nav a {text-decoration: none;}
 
 /* Dialog */
