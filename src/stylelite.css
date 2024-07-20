@@ -162,6 +162,7 @@ article {
     border: 1px solid rgba(0,0,0,.125);
     background: var(--light);
     color: var(--dark);
+    padding: 1rem;
 }
 
 /* Forms */
