@@ -1,7 +1,9 @@
 /*! Stylelite v:0.8.2 | MIT LICENSE | https://github.com/n2geoff/stylelite */
 :root {
+    --theme: steelblue;
     --size: 1rem;
     --radius: 0rem;
+
     --fg: #17202A;
     --bg: #FDFEFE;
     --mg: #99A3A4;
@@ -11,14 +13,20 @@
 
     --light: #EEE;
     --dark: #222;
-
-    --theme: steelblue;
 }
 
 [data-theme=dark] {
-    --mg: #99A3A4;;
-    --bg: #17202A;
-    --fg: #EAECEE;
+    --theme: #5499C7;
+
+    --mg: #555;
+    --bg: #222;
+    --fg: #FFF;
+
+    --white: #FFF;
+    --black: #000;
+
+    --dark: #DDD;
+    --light: #444;
 }
 
 * {margin:0}
