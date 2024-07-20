@@ -69,6 +69,7 @@ label.addon {
 
 code {
     background: var(--light);
+    color: var(--dark);
     padding: .25rem
 }
 
@@ -125,7 +126,7 @@ legend {
 
 blockquote {
     margin: var(--size) 0;
-    color: var(--black);
+    color: var(--dark);
     background: var(--light);
     padding: var(--size);
     border-left: 8px solid var(--theme);
