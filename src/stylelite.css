@@ -1,4 +1,4 @@
-/*! Stylelite v:0.8.1 | MIT LICENSE | https://github.com/n2geoff/stylelite */
+/*! Stylelite v:0.8.2 | MIT LICENSE | https://github.com/n2geoff/stylelite */
 :root {
     --size: 1rem;
     --radius: 0rem;
@@ -37,7 +37,7 @@ html,body {
     line-height: 1.5rem;
 }
 
-div, label, input, button, textarea, select {margin-bottom: .25rem;}
+span,div, input, button, textarea, select {margin-bottom: .25rem;margin-top: .25rem;}
 
 p {margin: 1rem 0}
 
@@ -63,8 +63,8 @@ label.addon {
     max-height: 2.5rem;
     background: var(--light);
     padding: .5rem 1rem;
-    text-align: center;
     border: 1px solid var(--theme);
+    margin-top: .25rem;
 }
 
 code {
@@ -216,7 +216,6 @@ input[type="radio"]{
 	width: 1.1rem;
 	height: 1.1rem;
 	margin-right: .5rem;
-    margin-top: .25rem;
 }
 
 input::placeholder {color: var(--mg)}
@@ -236,7 +235,7 @@ button[disabled], button[disabled]:hover {
 button.link {
     border: none;
     background: none;
-    color: var(--theme)
+    color: var(--theme);
 }
 
 button.link:hover {
@@ -345,8 +344,7 @@ dialog {
     grid-template-columns: repeat(auto-fit, minmax(0%, 1fr));
 }
 
-.group {display: flex;}
+.group {display: flex}
 .right {float:right}
 .left {float:left}
-.center {text-align: center;}
-.clear {content:'';display: table;clear:both}
+.center {text-align: center}
