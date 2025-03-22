@@ -1,7 +1,6 @@
 class ThemeToggle extends HTMLElement {
     constructor() {
         super();
-        // this.attachShadow({ mode: 'open' });
         this.isLight = true;
     }
 
@@ -19,9 +18,8 @@ class ThemeToggle extends HTMLElement {
     render() {
         this.innerHTML = `
             <style>
-                :host {
+                theme-toggle:hover {
                     cursor: pointer;
-                    display: inline-block;
                 }
             </style>
             ${this.isLight
