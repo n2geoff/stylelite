@@ -18,15 +18,15 @@
 [data-theme=dark] {
     --theme: #5499C7;
 
-    --mg: #555;
-    --bg: #222;
-    --fg: #FFF;
+    --mg: #6B7280;
+    --bg: #1A1A1A;
+    --fg: #E0E0E0;
 
     --white: #FFF;
     --black: #000;
 
-    --dark: #DDD;
-    --light: #444;
+    --dark: #D4D4D4;
+    --light: #272727;
 }
 
 * {margin:0}
@@ -62,20 +62,19 @@ li {margin-left: 1rem}
 label {
     display: inline-block;
     font-weight: 600;
-    color: var(--dark);
+    color: var(--white);
     white-space: nowrap;
     vertical-align: top;
 }
 
 label.addon {
     max-height: 2.5rem;
-    background: var(--light);
+    background: var(--theme);
     padding: .5rem 1rem;
-    border: 1px solid var(--theme);
     margin-top: .25rem;
 }
 
-code {
+pre,code {
     background: var(--light);
     color: var(--dark);
     padding: .25rem
