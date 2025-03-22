@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,7 @@
     <title>Stylelite</title>
     <link rel="stylesheet" href="../src/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons-css@1.2.0/css/feather.min.css">
+    <script src="../src/components/theme-toggle.js"></script>
     <style>
         .fill {height: 100%; width: 100%}
         .grid-center {align-self: center; justify-self: center;}
@@ -30,6 +31,7 @@
                     <li><a href="#components">Components</a></li>
                     <li><a href="#utilities">Utilities</a></li>
                     <li><a href="#customize">Customize</a></li>
+                    <li><theme-toggle /></li>
                 </ul>
             </nav>
             <p>
@@ -110,7 +112,7 @@
                 <div>
                     <code>IMG</code>
                 </div>
-                <img src='http://via.placeholder.com/340x280' alt='Example image'>
+                <img src='https://placehold.co/340x280' alt='Example image'>
             </div>
         </section>
         <section>
@@ -158,7 +160,7 @@
                     <div class="group">
                         <input type='email' name='email' id='email' placeholder='email@example.com' autocomplete="off">
                         <label class="addon">
-                            <i class="ft-mail" style="color: #000"></i>
+                            <i class="ft-mail"></i>
                         </label>
                     </div>
                 </div>
