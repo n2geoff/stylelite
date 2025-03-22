@@ -13,11 +13,11 @@ All in **2kb gzipped!**
 - Tiny, 2kb
 - Class-lite
 - Few Layout Utility Classes
-    - `.grid`, `.group`, `.left`, `.right`, `.center` `.clear`
+    - `.grid`, `.group`, `.left`, `.right`, `.center`
 
 - **extras/** supplies pick-and-choose styles to expanded your options
-- Dynamic, 12 Custom CSS Vars
-- Includes Light and Dark Themes
+- Dynamic, 10 Custom CSS Vars
+- Includes Light and Dark Themes (`data-theme="light"`)
 
 Designed to work with default [Feather Icons](https://feathericons.com/)
 
@@ -52,9 +52,41 @@ It is RECOMMENDED you import **Stylelite** via a `main.css` or the like referenc
 ```css
 @import url(stylelite);
 
+/* Customize Vars / Theme */
+
+:root {
+    --theme: steelblue;
+    --size: 1rem;
+    --radius: 0rem;
+
+    --fg: #17202A;
+    --bg: #FDFEFE;
+    --mg: #99A3A4;
+
+    --white: #FFF;
+    --black: #000;
+
+    --light: #EEE;
+    --dark: #222;
+}
+
 /* Add Your Styles Below */
 
 ```
+### Avaliable Vars
+
+| Var | Default | Description |
+|--|--|--|
+| --theme | steelblue | theme color |
+| --size | 1rem | a universal size, margin, font-size, ect... |
+| --radius | 0rem | add some curves |
+| --fg| #17202A | foreground color |
+| --mg | #99A3A4 | midground color or netural color |
+| --bg | #FDFEFE | background color |
+| --white | #FFF | white color |
+| --black | #000 | black color |
+| --light | #EEE | light accent color |
+| --dark | #222 | dark accent color |
 
 Below are some simple and common examples.
 
