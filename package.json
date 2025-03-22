@@ -1,6 +1,6 @@
 {
   "name": "stylelite",
-  "version": "0.8.2",
+  "version": "0.9.9",
   "description": "a class-lite stylesheet on the light-side",
   "scripts": {
     "build": "npx csso-cli .\\src\\stylelite.css --comments first-exclamation --output .\\dist\\stylelite.min.css -s .\\dist\\stylelite.map"
