@@ -52,25 +52,15 @@ It is RECOMMENDED you import **Stylelite** via a `main.css` or the like referenc
 ```css
 @import url(stylelite);
 
-/* Customize Vars / Theme */
+/* customize */
 
 :root {
-    --theme: steelblue;
-    --size: 1rem;
-    --radius: 0rem;
-
-    --fg: #17202A;
-    --bg: #FDFEFE;
-    --mg: #99A3A4;
-
-    --white: #FFF;
-    --black: #000;
-
-    --light: #EEE;
-    --dark: #222;
+  --theme: steelblue;
+  --radius: 0rem;
+  ...
 }
 
-/* Add Your Styles Below */
+/* or add your own styles below */
 
 ```
 ### Avaliable Vars
