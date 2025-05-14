@@ -166,7 +166,7 @@ section, article {
     margin-bottom: 2rem;
 }
 
-article {
+article, aside {
     border: 1px solid rgba(0,0,0,.125);
     background: var(--light);
     color: var(--dark);
@@ -323,11 +323,18 @@ textarea {
 nav {
     display: flex;
     justify-content: space-between;
-    padding-bottom: .25rem;
+    height: 2rem;
     border-bottom: 1px solid var(--theme);
 }
+nav.navbar {
+    background: var(--theme);
+    color: var(--light);
+    border: none;
+}
+.navbar li:hover {background: var(--white);color: var(--theme)}
+.navbar li a {color: inherit}
 
-nav ul {display: flex;list-style-type: none;margin:0;padding:0}
+nav ul {display: flex;list-style-type: none;margin:0;padding:0; line-height: 2rem}
 nav ul li {padding:0rem .5rem;margin:0}
 nav ul li:first-child {margin-left:0;margin-left:0}
 nav a {text-decoration: none;}
